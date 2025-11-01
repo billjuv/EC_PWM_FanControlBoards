@@ -33,6 +33,6 @@ Note: transistors are both 2N3904
  
 <img src=Attachments/IMG_0289.jpg width="60%"/> 
 <img src=Attachments/IMG_0293.jpg width="60%"/>  
-The two pictures above show the use of the cabinet mounted USB-C cables using Kyle's boards, and the reason I designed the JST-PH version of the board.
+The two pictures above show the use of the cabinet mounted USB-C cables using Kyle's boards... and the reason I designed the JST-PH version of the board.
 
 [def]: https://www.amazon.com/Female-Waterproof-Terminal-Pigtail-Extension/dp/B0D7CN4BTV/ref=sr_1_1?crid=22DIPVZJ6NLNA&dib=eyJ2IjoiMSJ9.5A5gh8wlE1dA5xzyWRfnF6wJ0fd9cFGKaGoMoL32RONrxG9_nN8LmJ9rJli3ujotLw90tzZNpYxllE3eMCpda7KoQPOh_-vPp3rROVUxTw11IfYGYRkTlLA7TaCoP3jR.uXNtln_9dJgcMFb5AaFasS38uiNJQxI2SMAjDUyGoKk&dib_tag=se&keywords=xiwai%2B5pcs%2FSet&qid=1761968034&sprefix=xiwai%2B5pcs%2Fset%2Caps%2C101&sr=8-1&th=1
