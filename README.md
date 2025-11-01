@@ -31,6 +31,7 @@ Note: transistors are both 2N3904
 
 
 
+ 
+<img src=Attachments/IMG_0289.jpg width="60%"/> 
 <img src=Attachments/IMG_0293.jpg width="60%"/>  
-<img src=Attachments/IMG_0289.jpg width="60%"/>  
 The two pictures above show the use of the cabinet mounted USB-C cables using Kyle's boards, and the reason I designed the JST-PH version of the board.
