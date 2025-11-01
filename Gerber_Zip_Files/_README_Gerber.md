@@ -1,0 +1,1 @@
+The enclosed Gerber files are from EasyEDA. I've included .zip files as well as the complete expanded files foe eash of the boards. See the main README.md for photos and decriptions.
