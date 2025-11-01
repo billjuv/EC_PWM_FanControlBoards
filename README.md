@@ -17,7 +17,6 @@ I’ve included Gerber files for three board variations (see README in Gerber fo
 All boards have 10v and GND pads for tapping into fan power if needed. 
 
 
-
 [Amazon link to cables below][def]
 <img src=Attachments/cable.jpg width="50%"/>
 
