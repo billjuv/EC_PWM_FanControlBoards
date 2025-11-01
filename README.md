@@ -18,8 +18,8 @@ All boards have 10v and GND pads for tapping into fan power if needed.
 
 
 [Amazon link to cables below][def]
-<img src=Attachments/cable.jpg width="50%"/>
 
+<img src=Attachments/cable.jpg width="50%"/>
 <img src=Attachments/IMG_4349.jpg width="50%"/> 
 Hole sizes for above cable mount
 
