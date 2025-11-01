@@ -29,5 +29,5 @@ Hole sizes for above cable mount
 Note: transistors are both 2N3904
 
 
-![IMG_0293.jpg](Attachments/IMG_0293.HEIC)  
-![IMG_0289.jpg](Attachments/IMG_0289.HEIC)  
+<img src=Attachments/IMG_0293.jpg width="60%"/>  
+<img src=Attachments/IMG_0289.jpg width="60%"/>  
