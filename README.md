@@ -1,8 +1,8 @@
 # EC-PWM Fan Control Boards - USB-C
 
-These were designed for use with EC fans which use USB-C connectors for controlling the speed through PWM. They are modifications of Kyle Gabriel’s (Mycodo) fan control boards for TerraBloom EC fans using USB-C connectors instead of audio connectors. They provide voltage level shifting for use with Raspberry Pi or ESP boards and tach signals (RPM) from compatible fans.  
+These were designed for use with EC fans which use USB-C connectors for controlling the speed through PWM. They are modifications of Kyle Gabriel’s (Mycodo) fan control boards for TerraBloom EC fans using USB-C connectors instead of audio connectors. They provide voltage level shifting for use with Raspberry Pi or ESP boards and monitoring of tach signals (RPM) from compatible fans.  
   
-These boards control PWM speed for EC fans supplying 10VDC from a USB-C cable (AC Infinity fans ("UIS") or Vivosun fans ("SGS") - and perhaps others). I’ve verified the PWM control works well on the AC Infinity Airlift S Series Shutter Fans (with tach) and the AC Infinity Cloudray S6 6” clip fan (no tach function). I’ve also tested it on the VIVOSUN AeroWave E6 Gen2, Grow Tent Clip Fan 6” (no tach on this fan, unsure about the larger fans). These tests were done from a Raspberry Pi 4 using Mycodo and from ESP32 boards using ESPHome and MQTT.  
+These boards safely control the PWM speed for EC fans supplying 10VDC from a USB-C cable (AC Infinity fans ("UIS") or Vivosun fans ("SGS") - and perhaps others) from Raspberry Pi GPIO pins or ESP32 pins. I’ve verified the PWM control works well on the AC Infinity Airlift S Series Shutter Fans (with tach) and the AC Infinity Cloudray S6 6” clip fan (no tach function). I’ve also tested it on the VIVOSUN AeroWave E6 Gen2, Grow Tent Clip Fan 6” (no tach on this fan, unsure about the larger fans). These tests were done from a Raspberry Pi 4 using Mycodo and from ESP32 boards using ESPHome and MQTT.  
   
 <img src=Attachments/IMG_1477.jpg width="60%"/>   
 
@@ -33,3 +33,4 @@ Note: transistors are both 2N3904
 
 <img src=Attachments/IMG_0293.jpg width="60%"/>  
 <img src=Attachments/IMG_0289.jpg width="60%"/>  
+The two pictures above show the use of the cabinet mounted USB-C cables using Kyle's boards, and the reason I designed the JST-PH version of the board.
