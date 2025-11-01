@@ -24,8 +24,10 @@ All boards have 10v and GND pads for tapping into fan power if needed.
 <img src=Attachments/IMG_4349.jpg width="50%"/> 
 Hole sizes for above cable mount
 
+
 ![GPIO Header:](Attachments/Screenshot%202025-08-11%20at%205.42.39%E2%80%AFPM.PNG) 
 Note: transistors are both 2N3904
+
 
 ![IMG_0293.jpg](Attachments/IMG_0293.HEIC)  
 ![IMG_0289.jpg](Attachments/IMG_0289.HEIC)  
