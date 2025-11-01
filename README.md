@@ -4,9 +4,9 @@ These boards are modifications of Kyle Gabriel’s (Mycodo) fan control boards f
   
 These boards control PWM speed for EC fans supplying 10-12VDC from a USB-C cable (AC Infinity fans ("UIS") or Vivosun fans ("SGS") - and perhaps others). I’ve verified the PWM control works well on the AC Infinity Airlift S Series Shutter Fans (with tach) and the AC Infinity Cloudray S6 6” clip fan (without tach). I’ve also tested it on the VIVOSUN AeroWave E6 Gen2, Grow Tent Clip Fan 6” (without tach on this fan, unsure about the larger fans). These tests were done from a Raspberry Pi 4 using Mycodo and from ESP32 boards using ESPHome and MQTT.  
   
-![IMG_1477.heic](Attachments/IMG_1477.heic)  
+![IMG_1477.jpg](Attachments/IMG_1477.heic)  
   
-![IMG_1484.heic](Attachments/IMG_1484.heic) 
+![IMG_1484.jpg](Attachments/IMG_1484.heic) 
 
 I’ve included Gerber files for three board versions:  
   
@@ -27,5 +27,5 @@ Hole sizes for above cable mount
 ![GPIO Header:](Attachments/Screenshot%202025-08-11%20at%205.42.39%E2%80%AFPM.PNG) 
 Note: transistors are both 2N3904
 
-![IMG_0293.HEIC](Attachments/IMG_0293.HEIC)  
-![IMG_0289.HEIC](Attachments/IMG_0289.HEIC)  
+![IMG_0293.jpg](Attachments/IMG_0293.HEIC)  
+![IMG_0289.jpg](Attachments/IMG_0289.HEIC)  
