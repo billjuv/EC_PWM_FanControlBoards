@@ -10,7 +10,7 @@ These boards safely control the PWM speed for EC fans supplying 10VDC from a USB
 
 I’ve included Gerber files for three board variations (see README in Gerber folder):  
 
-- Left: ‘USB-C_Breakout_x_2.54’ (Gerber is modified for offset transistor lead footprint).  
+- Left: ‘USB-C_Breakout_x_2.54’ (Gerber is modified for offset transistor lead footprint - not as shown).  
 - Center: ‘2.54x2_Breadboard’ (board is short enough for jumpers on both ends).  
 - Right: ‘JST-PH_x_2.54’ (for use with ‘xiwai’ 4-pin cabinet mount cable (link below)).  
 
