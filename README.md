@@ -1,8 +1,8 @@
 # EC-PWM Fan Control Boards - USB-C
 
-These were designed for use with EC fans which use USB-C connectors for controlling the speed through PWM. They are modifications of Kyle Gabriel’s (Mycodo) fan control boards for TerraBloom EC fans using USB-C connectors instead of audio connectors. They provide voltage level shifting for use with Raspberry Pi or ESP boards and monitoring of tach signals (RPM) from compatible fans.  
+These boards were designed for use with EC fans which use USB-C connectors for controlling the speed through PWM. They are modifications of Kyle Gabriel’s (Mycodo) fan control boards for TerraBloom EC fans using USB-C connectors instead of audio connectors. They provide voltage level shifting for use with Raspberry Pi or ESP boards and monitoring of tach signals (RPM) from compatible fans.  
   
-These boards safely control the PWM speed for EC fans supplying 10VDC from a USB-C cable (AC Infinity fans ("UIS") or Vivosun fans ("SGS") - and perhaps others) from Raspberry Pi GPIO pins or ESP32 pins. I’ve verified the PWM control works well on the AC Infinity Airlift S Series Shutter Fans (with tach) and the AC Infinity Cloudray S6 6” clip fan (no tach function). I’ve also tested it on the VIVOSUN AeroWave E6 Gen2, Grow Tent Clip Fan 6” (no tach on this fan, unsure about the larger fans). These tests were done from a Raspberry Pi 4 using Mycodo and from ESP32 boards using ESPHome and MQTT.  
+You can safely control the PWM speed for EC fans supplying 10VDC from a USB-C cable (AC Infinity fans ("UIS") or Vivosun fans ("SGS") - and perhaps others) from Raspberry Pi GPIO pins or ESP32 pins, without the need for proprietary controllers. I’ve verified the PWM control works well on the AC Infinity Airlift S Series Shutter Fans (with tach) and the AC Infinity Cloudray S6 6” clip fan (no tach function). I’ve also tested it on the VIVOSUN AeroWave E6 Gen2, Grow Tent Clip Fan 6” (no tach on this fan, unsure about the larger fans). These tests were done from a Raspberry Pi 4 using Mycodo and from ESP32 boards using ESPHome and MQTT.  
   
 <img src=Attachments/IMG_1477.jpg width="60%"/>   
 
