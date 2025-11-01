@@ -18,8 +18,8 @@ I’ve included Gerber files for three board versions:
   
 All boards have 10v and GND pads for tapping into fan power. 
 
-xiwai 5pcs/Set DIY OEM Type C Female Socket to 4Pin Header Cable Type-C to 4P Waterproof Terminal Wire with Pitch=2.0mm Latch Mount Type USB C Pigtail DC 5V Extension Power Cable
-[text](../../../../../../..)
+[USB-C Cabinet Mount JST Cable](xiwai 5pcs/Set DIY OEM Type C Female Socket to 4Pin Header Cable Type-C to 4P Waterproof Terminal Wire with Pitch=2.0mm Latch Mount Type USB C Pigtail DC 5V Extension Power Cable)
+
 ![Thickness](Attachments/IMG_4349.jpg)  
 ![GRIO Header:](Attachments/Screenshot%202025-08-11%20at%205.42.39%E2%80%AFPM.PNG)  
 ![IMG_0293.HEIC](Attachments/IMG_0293.HEIC)  
