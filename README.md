@@ -80,7 +80,7 @@ The two photos below show the original setup using Kyle's boards with cabinet-mo
 
 ## Related Project
 
-For a complete ESP32/ESPHome implementation using these boards, see the companion repository:
+For a complete ESP32/ESPHome fan control box incorporating the circuitry used these boards, see the companion repository:
 [EC Fan Control using ESP32, ESPHome and MQTT](https://github.com/billjuv/EC_Fan_ESPHome)
 
 ---
