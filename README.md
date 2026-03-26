@@ -1,38 +1,88 @@
-# EC-PWM Fan Control Boards - USB-C
+# EC-PWM Fan Control Boards — USB-C
 
-These boards were designed for use with EC fans which use USB-C connectors for controlling the speed through PWM. They are modifications of Kyle Gabriel’s (Mycodo) fan control boards for TerraBloom EC fans using USB-C connectors instead of audio connectors. They provide voltage level shifting for use with Raspberry Pi or ESP boards and monitoring of tach signals (RPM) from compatible fans.  
-  
-You can safely control the PWM speed for EC fans supplying 10VDC from a USB-C cable (AC Infinity fans ("UIS") or Vivosun fans ("SGS") - and perhaps others) from Raspberry Pi GPIO pins or ESP32 pins, without the need for proprietary controllers. I’ve verified the PWM control works well on the AC Infinity Airlift S Series Shutter Fans (with tach) and the AC Infinity Cloudray S6 6” clip fan (no tach function). I’ve also tested it on the VIVOSUN AeroWave E6 Gen2, Grow Tent Clip Fan 6” (no tach on this fan, unsure about the larger fans). These tests were done from a Raspberry Pi 4 using Mycodo and from ESP32 boards using ESPHome and MQTT.  
-  
-<img src=Attachments/IMG_1477.jpg width="60%"/>   
+These boards were designed for controlling EC fans that use USB-C connectors for PWM speed control. They are modifications of [Kyle Gabriel's](https://github.com/kizniche) (Mycodo) fan control boards for TerraBloom EC fans, adapted to use USB-C connectors instead of audio connectors.
 
-<img src=Attachments/IMG_1484.jpg width="60%"/>  
+The boards provide voltage level shifting for safe use with Raspberry Pi GPIO pins or ESP32 pins, and support monitoring of tach signals (RPM) from compatible fans.
 
-I’ve included Gerber files for three board variations (see README in Gerber folder):  
+---
 
-- Left: ‘USB-C_Breakout_x_2.54’ (Gerber is modified for offset transistor lead footprint - not as shown).  
-- Center: ‘2.54x2_Breadboard’ (board is short enough for jumpers on both ends).  
-- Right: ‘JST-PH_x_2.54’ (for use with ‘xiwai’ 4-pin cabinet mount cable (link below)).  
+## Overview
 
-All boards have 10v and GND pads for tapping into fan power if needed. 
+You can safely control the PWM speed of EC fans supplied with 10VDC via USB-C cable — such as AC Infinity ("UIS") or Vivosun ("SGS") fans, and possibly others — without the need for proprietary controllers.
 
+### Tested and Verified
 
-[Amazon link to cables below][def]
+| Fan | PWM Control | Tach (RPM) |
+|-----|-------------|------------|
+| AC Infinity Airlift S Series Shutter Fan | ✅ | ✅ |
+| AC Infinity Cloudray S6 6" Clip Fan | ✅ | ❌ |
+| Vivosun AeroWave E6 Gen2 6" Clip Fan | ✅ | ❌ (larger models unknown) |
+
+Testing was done using a Raspberry Pi 4 with Mycodo, and ESP32 boards with ESPHome and MQTT.
+
+---
+
+## Board Variations
+
+Three board variations are included (see README in Gerber folder for details):
+
+<img src=Attachments/IMG_1477.jpg width="60%"/>
+<img src=Attachments/IMG_1484.jpg width="60%"/>
+
+| Board | Description |
+|-------|-------------|
+| **Left** — `USB-C_Breakout_x_2.54` | Gerber modified for offset transistor lead footprint (not as shown) |
+| **Center** — `2.54x2_Breadboard` | Short enough for jumpers on both ends |
+| **Right** — `JST-PH_x_2.54` | Designed for use with the 'xiwai' 4-pin cabinet mount USB-C cable (link below) |
+
+All boards include 10V and GND pads for tapping into fan power if needed.
+
+> **Note:** Both transistors are 2N3904.
+
+---
+
+## Schematic
+
+![GPIO Header](Attachments/Screenshot%202025-08-11%20at%205.42.39%E2%80%AFPM.PNG)
+
+---
+
+## Cable
+
+These fans use a USB-C style cable carrying PWM and tach signals — not USB data. The JST-PH board variant was specifically designed around the cabinet-mount cable linked below.
+
+[Amazon — USB-C Pigtail Extension Cable][cable]
 
 <img src=Attachments/cable.jpg width="50%"/>
-<img src=Attachments/IMG_4349.jpg width="50%"/> 
-Hole sizes for above cable mount
 
+<img src=Attachments/IMG_4349.jpg width="50%"/>
 
+*Hole sizes for the above cable mount*
 
-![GPIO Header:](Attachments/Screenshot%202025-08-11%20at%205.42.39%E2%80%AFPM.PNG) 
-Note: transistors are both 2N3904
+---
 
+## Background — Why the JST-PH Version?
 
+The two photos below show the original setup using Kyle's boards with cabinet-mounted USB-C cables. The awkward wiring is exactly what motivated the JST-PH board redesign.
 
- 
-<img src=Attachments/IMG_0289.jpg width="60%"/> 
-<img src=Attachments/IMG_0293.jpg width="60%"/>  
-The two pictures above show the use of the cabinet mounted USB-C cables using Kyle's boards... and the reason I designed the JST-PH version of the board.
+<img src=Attachments/IMG_0289.jpg width="60%"/>
+<img src=Attachments/IMG_0293.jpg width="60%"/>
 
-[def]: https://www.amazon.com/Female-Waterproof-Terminal-Pigtail-Extension/dp/B0D7CN4BTV/ref=sr_1_1?crid=22DIPVZJ6NLNA&dib=eyJ2IjoiMSJ9.5A5gh8wlE1dA5xzyWRfnF6wJ0fd9cFGKaGoMoL32RONrxG9_nN8LmJ9rJli3ujotLw90tzZNpYxllE3eMCpda7KoQPOh_-vPp3rROVUxTw11IfYGYRkTlLA7TaCoP3jR.uXNtln_9dJgcMFb5AaFasS38uiNJQxI2SMAjDUyGoKk&dib_tag=se&keywords=xiwai%2B5pcs%2FSet&qid=1761968034&sprefix=xiwai%2B5pcs%2Fset%2Caps%2C101&sr=8-1&th=1
+---
+
+## What's Included
+
+- Gerber files for all three board variations
+- Schematic/GPIO header diagram
+- Links to compatible parts
+
+---
+
+## Related Project
+
+For a complete ESP32/ESPHome implementation using these boards, see the companion repository:
+[EC Fan Control using ESP32, ESPHome and MQTT](https://github.com/billjuv/EC_Fan_ESPHome)
+
+---
+
+[cable]: https://www.amazon.com/Female-Waterproof-Terminal-Pigtail-Extension/dp/B0D7CN4BTV/ref=sr_1_1?crid=22DIPVZJ6NLNA&dib=eyJ2IjoiMSJ9.5A5gh8wlE1dA5xzyWRfnF6wJ0fd9cFGKaGoMoL32RONrxG9_nN8LmJ9rJli3ujotLw90tzZNpYxllE3eMCpda7KoQPOh_-vPp3rROVUxTw11IfYGYRkTlLA7TaCoP3jR.uXNtln_9dJgcMFb5AaFasS38uiNJQxI2SMAjDUyGoKk&dib_tag=se&keywords=xiwai%2B5pcs%2FSet&qid=1761968034&sprefix=xiwai%2B5pcs%2Fset%2Caps%2C101&sr=8-1&th=1
