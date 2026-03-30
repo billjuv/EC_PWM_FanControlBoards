@@ -6,22 +6,6 @@ The boards provide voltage level shifting for safe use with Raspberry Pi GPIO pi
 
 ---
 
-## Overview
-
-You can safely control the PWM speed of EC fans supplied with 10VDC via USB-C cable — such as AC Infinity ("UIS") or Vivosun ("SGS") fans, and possibly others — without the need for proprietary controllers.
-
-### Tested and Verified
-
-| Fan | PWM Control | Tach (RPM) |
-|-----|-------------|------------|
-| AC Infinity Airlift S Series Shutter Fan | ✅ | ✅ |
-| AC Infinity Cloudray S6 6" Clip Fan | ✅ | ❌ |
-| Vivosun AeroWave E6 Gen2 6" Clip Fan | ✅ | ❌ (larger models unknown) |
-
-Testing was done using a Raspberry Pi 4 with Mycodo, and ESP32 boards with ESPHome and MQTT.
-
----
-
 ## Board Variations
 
 Three board variations are included (see README in Gerber folder for details):
