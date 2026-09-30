@@ -1,4 +1,5 @@
 # EC-PWM Fan Control Boards — USB-C
+> 🍄 One of several related projects. See the full list at **[billjuv.github.io](https://billjuv.github.io)**.
 
 These boards were designed for controlling EC fans that use USB-C connectors for PWM speed control. They are modifications of Kyle Gabriel's [Mycodo](https://github.com/kizniche) fan control boards for TerraBloom EC fans, adapted to use USB-C connectors instead of audio connectors.
 
